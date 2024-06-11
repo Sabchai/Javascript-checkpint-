@@ -1,0 +1,76 @@
+function reverse (mot) {
+    var motinverse=""
+    for (var i=mot.length-1; i>=0; i--) {
+        motinverse+=mot[i]
+    }
+   return motinverse
+}
+
+ console.log (reverse("hello"))
+
+---------
+
+function up (mot) {
+var motup=""
+
+    for (var i=0; i<mot.length; i++) {
+
+    if (i===0) {
+     motup+=mot[0].toUpperCase()
+    }
+ else if (mot[i-1]===" ") 
+ {
+     motup+=mot[i].toUpperCase()}
+else {
+motup += mot [i]
+ }
+
+}
+ return motup
+    }
+console.log (up("hello word"))
+
+-------------------------------------
+
+function Max (arr){
+    var Max= arr[0]
+    for( var i=1; i< arr.length;i++){
+        if (arr[i]> Max){
+            Max=arr[i]
+        }
+    }
+    return Max
+}
+console.log(Max([18,14,0,3,4]));
+
+function Min (arr){
+    var Min= arr[0]
+    for( var i=1; i<arr.length;i++){
+        if (arr[i]< Min){
+            Min= arr[i]
+        }
+    }
+    return Min
+}
+console.log(Min ([18,14,0,3,4]));
+
+---------------------------------------------------
+function findsum (numbers){
+  var sum=0;
+  for (var i=0; i<numbers.length; i++){
+      sum+= numbers[i];}
+      return sum
+  }
+    console.log (findsum([1,10,3,16]));
+
+----------------------------------------
+function filter (arr){
+    var aff=[]
+  for (var i=0; i<arr.length; i++){
+      if(arr[i]>12){
+aff.push( arr[i])
+  }
+  }
+   return aff
+  }
+    console.log (filter([15,14,3,7]))
